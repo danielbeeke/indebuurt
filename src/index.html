@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Indebuurt</title>
+        <link href="css/styles.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+
+        @@include('./illustration.svg')
+          
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> 
+        <script>
+
+            let illustration = document.querySelector('.illustration');
+
+            let trees = document.querySelector('.trees');
+            let dots = document.querySelector('.dots');
+            let flat = document.querySelector('.flat');
+            let grass = document.querySelector('.grass');
+
+            trees.dataset.depth = .3;
+            dots.dataset.depth = .7;
+            flat.dataset.depth = .1;
+            grass.dataset.depth = .6;
+            
+            let parallax = new Parallax(illustration);
+
+        </script>
+
+    </body>
+</html>
+
