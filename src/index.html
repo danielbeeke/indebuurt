@@ -14,7 +14,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> 
         <script>
 
-            let illustration = document.querySelector('.illustration');
+            let illustrationVerticalHorizontal = document.querySelector('.illustration .vertical-and-horizontal');
+            let illustrationHorizontal = document.querySelector('.illustration .horizontal');
 
             let trees = document.querySelector('.trees');
             let dots = document.querySelector('.dots');
@@ -26,7 +27,10 @@
             flat.dataset.depth = .1;
             grass.dataset.depth = .6;
             
-            let parallax = new Parallax(illustration);
+            new Parallax(illustrationVerticalHorizontal);
+            new Parallax(illustrationHorizontal, {
+              scalarY: false
+            });
 
         </script>
 
