@@ -1,10 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Noto+Sans");
 html,
 body {
   padding: 0;
   margin: 0;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #beecff; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .illustration {
-  height: 100%;
-  width: 100%; }
+  height: 101%;
+  width: 101%; }
+
+.about-us {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 600px;
+  max-width: -webkit-calc(100vw - 40px);
+  max-width: calc(100vw - 40px);
+  max-height: -webkit-calc(100vh - 40px);
+  max-height: calc(100vh - 40px);
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow-y: auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 300;
+  margin-top: 0; }
+
+a {
+  color: #71afff; }
